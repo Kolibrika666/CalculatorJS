@@ -2,6 +2,31 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+}
+
+.calculator__Body {
+  width: 375px;
+  height: 100vh;
+  max-height: 812px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  background: #DFE2EB;
+  padding: 0 18px 38px 19px;
+  font-size: 21px;
+  border-radius: 10px;
+}
