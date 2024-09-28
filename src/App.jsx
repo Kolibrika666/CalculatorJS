@@ -1,12 +1,13 @@
 import { useState } from 'react'
-import ButtonBody from './Calculator/ButtonBody'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-<ButtonBody/>
+    Calculator
     </>
   )
 }
