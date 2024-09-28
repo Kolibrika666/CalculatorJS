@@ -1,15 +1,14 @@
 import React, { useCallback, useEffect } from 'react';
 import './Button.css'
-import { res } from '../Section';
 
 const ButtonResult = ({func, value, key}) => {
     
     return (
         <button
         key = {key}
-        className='white_btn'
-        onClick={func}
-        >{value}</button>
+        className = 'gray'
+        onClick = {func}
+        > {value} </button>
     );
 };
 

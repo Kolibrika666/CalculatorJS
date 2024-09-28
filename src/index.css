@@ -10,7 +10,7 @@
   padding: 0;
 }
 body {
-  display: flex;
+  display: grid;
   justify-content: center;
   padding: 10px;
 }

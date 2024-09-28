@@ -1,9 +1,8 @@
 import React, { useCallback, useEffect } from 'react';
 import './Button.css'
-import { res } from '../Section';
 
 const ButtonNumber = ({onChange, value, key}) => {
-    
+
     const getValue = useCallback(() => {
         onChange(value)
     },[])
@@ -11,9 +10,9 @@ const ButtonNumber = ({onChange, value, key}) => {
     return (
         <button
         key = {key}
-        className='white_btn'
-        onClick={getValue}
-        >{value}</button>
+        className = 'white'
+        onClick = {getValue}
+        > {value} </button>
     );
 };
 
