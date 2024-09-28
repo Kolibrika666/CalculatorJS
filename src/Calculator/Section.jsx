@@ -20,14 +20,24 @@ const Section = () => {
     }
 
     const inverse = () => {
-
+        setExp((prev) => "-" + prev)
+        setRes((prev) => "-" + prev)
     }
     const clearAll = () => {
-
+        setExp(0)
+        setRes(0)
     }
 
     const clear = () => {
-
+        let s = exp.slice(0,-1)
+        if (s.length > 0) {
+            setExp(s)
+            setRes(s)
+        } else {
+            setExp(0)
+            setRes(0)
+        }
+     
     }
 
     return (
