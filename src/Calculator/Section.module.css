@@ -1,0 +1,10 @@
+.section{
+    width: 375px;
+    height: 100vh;
+    max-height: 812px;
+    display: grid;
+    background: #DFE2EB;
+    padding: 20px;
+    font-size: 21px;
+    border-radius: 10px;
+    }
