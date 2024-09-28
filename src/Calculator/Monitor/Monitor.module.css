@@ -2,13 +2,16 @@
     display: grid;
     color: #8695AE;
     font-size: 28px;
+    overflow: hidden;
 }
-.monitor p:last-child {
-    color: #1D2028;
-    font-size: 56px;
-}
+
 .monitor p::before {
     content: '=';
     position: relative;
     right: 10px;
 }
+
+.monitor p:last-child {
+    color: #1D2028;
+    font-size: 56px;
+} 

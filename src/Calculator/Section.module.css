@@ -1,13 +1,42 @@
 .section{
-    width: 375px;
-    height: 100%;
+    min-width: 375px;
+    margin-top: 5px;
+    height: 90vh;
     display: grid;
+    grid-template-rows: 2fr 3fr;
     background: #DFE2EB;
     padding: 20px;
     font-size: 21px;
     border-radius: 10px;
+    align-items: end;
+    gap: 30px;
+    
     }
 
 .flex {
-    display: flex;
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 3fr 1fr ;
+    grid-template-rows: 1fr;
 }
+.flex div:first-child {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(5, 1fr) ;
+}
+
+.flex div:first-child button:last-child {
+    grid-column: 1 / -1;
+}
+
+.flex div:last-child {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr) ;
+}
+
+

@@ -6,10 +6,6 @@ import ButtonOperand from './Buttons/ButtonOperand';
 import ButtonResult from './Buttons/ButtonResult';
 import { numbers, operand } from './modal';
 
-export const res = (e) => {
-        return e
-}
-
 const Section = () => {
     const [exp, setExp] = useState(0)
     const [res, setRes] = useState(0)
@@ -50,7 +46,7 @@ const Section = () => {
                     {operand.map((e) => 
                         <ButtonOperand key={e.id} value={e.content} onChange={onButtonChange}/>
                      )}
-                    <ButtonResult key={4} value={'='} func={getResult} className={'orange'}/>
+                    <ButtonResult key={13} value={'='} func={getResult} className={'orange'}/>
                 </div> 
                 </div>
         </div>

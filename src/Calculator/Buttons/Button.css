@@ -3,11 +3,17 @@ button {
     border-radius: 23px;
     position: relative;
     font-size: 21px;
-    width: 77px;
-    height: 77px;
 }
 button:active {
     transform: scale(0.95);
+}
+
+button::after {
+    position: absolute;
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    top: 7px;
+    right: 7px;
 }
 
 .white {
@@ -21,25 +27,25 @@ button:active {
     border-radius: 18px;
 } 
 
-.grey{
-    background: #B0B9CA;
+.gray{
+    background: #b6b6cc;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.15), inset 4px 4px 4px #C1C9D4;
 }
 
-.grey::after {
+.gray::after {
     background: linear-gradient(134.24deg, #A0ADC4 15.47%, #C5CEDF 94.71%);
     filter: blur(1px);
     border-radius: 18px;
 }
 
 .orange {
-    background: #D07419;
+    background: #f1871c;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.15), inset 4px 4px 4px #D07419;
     color: white;
 }
 
 .orange::after {
-    background: linear-gradient(134.24deg, #C15D17 15.47%, #DF8419 94.71%);
+    background: linear-gradient(134.24deg, #793a0e 15.47%, #DF8419 94.71%);
     filter: blur(1px);
     border-radius: 18px;
 }
