@@ -11,8 +11,8 @@ const Section = () => {
     const [res, setRes] = useState('0')
 
     const onNumberChange = (value) => {
-        setExp((prev) => prev === '0' ? value : prev + value)
-        setRes((prev) => prev === '0' ? value : prev + value)
+        setExp((prev) => prev == '0' ? value : prev + value)
+        setRes((prev) => prev == '0' ? value : prev + value)
     };
 
     const onOperandChange = (value) => {
@@ -21,7 +21,7 @@ const Section = () => {
     };
 
     const getResult = () => {
-        setRes(eval(exp))
+        setRes(eval(exp).toString())
     }
 
     const onInverse = () => {
